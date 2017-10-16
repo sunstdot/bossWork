@@ -1,0 +1,181 @@
+.index-main {
+    position: relative;
+    margin-top: calc(~"(100vh - 7.3958vw) / 2");
+    transform: translateY(-50%);
+    .main-pro {
+        position: relative;
+        //.square(229px);
+        .square(11.9271vw);
+        margin: 0 auto;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, .8);
+        //border-image: -webkit-linear-gradient( rgba(255, 238, 204, .8), rgba(255, 255, 255, .8)) 30 30;
+        //font-size: 46px;
+        font-size: 2.3958vw;
+        text-align: center;
+        color: @white;
+        .pro-txt {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .lower {
+            display: block;
+            //font-size: 26px;
+            font-size: 1.3542vw;
+        }
+    }
+    .pro-wrap {
+        //width: 1244px;
+        width: 64.7917vw;
+        margin: 0 auto;
+    }
+    .pro {
+        position: relative;
+        float: left;
+        //.square(311px);
+        .square(16.1979vw);
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, .05);
+        opacity: 0;
+        .pro-rd {
+            &:before {
+                position: absolute;
+                display: block;
+                content: '';
+                //.square(200px);
+                .square(10.4167vw);
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, .35);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:after {
+                position: absolute;
+                display: block;
+                content: '';
+                //.square(260px);
+                .square(13.5417vw);
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, .1);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .pro-rd-txt {
+                position: relative;
+                display: inline-block;
+                //height: 44px;
+                //line-height: 44px;
+                height: 2.2917vw;
+                line-height: 2.2917vw;
+                background-color: rgba(0, 0, 0, .5);
+                color: @txt-color-1;
+                //padding: 0 30px;
+                //font-size: 24px;
+                //border-radius: 22px;
+                padding: 0 1.5625vw;
+                font-size: 1.25vw;
+                border-radius: 1.1458vw;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        svg {
+            position: absolute;
+            display: none;
+        }
+    }
+    .pro-0 {
+        //margin-top: -50px;
+        margin-top: -2.6042vw;
+        animation: fadeIn .2s .2s ease both;
+        svg {
+            //left: 295px;
+            //top: -40px;
+            left: 15.3646vw;
+            top: -5.0833vw;
+        }
+    }
+    .pro-1 {
+        //margin-top: 10px;
+        margin-top: .5208vw;
+        animation: fadeIn .2s .1s ease both;
+        svg {
+            //left: 235px;
+            //top: -20px;
+            left: 12.2396vw;
+            top: -1.0417vw;
+        }
+    }
+    .pro-2 {
+        //margin-top: 35px;
+        margin-top: 1.8229vw;
+        animation: fadeIn .2s .3s ease both;
+        svg {
+            //left: 60px;
+            //top: -50px;
+            left: 3.125vw;
+            top: -2.6042vw;
+        }
+    }
+    .pro-3 {
+        //margin-top: -60px;
+        margin-top: -3.125vw;
+        animation: fadeIn .2s .4s ease both;
+        svg {
+            //left: -200px;
+            //top: -50px;
+            left: -10.4167vw;
+            top: -2.6042px;
+        }
+    }
+
+}
+
+@media screen and (width: 1280px) {
+    .index-main .pro {
+        svg {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-min) {
+    .index-main {
+        padding: 0 @sm-mg;
+        .main-pro {
+            .square(92px);
+            width: 100%;
+            font-size: 18px;
+            border: 0;
+            .lower {
+                font-size: 12px;
+            }
+        }
+        .pro-wrap {
+            width: 248px;
+        }
+        .pro {
+            .square(124px);
+            margin-top: 10px;
+            .pro-rd {
+                &:before {
+                    .square(80px);
+                }
+                &:after {
+                    .square(104px);
+                }
+                .pro-rd-txt {
+                    height: 18px;
+                    line-height: 18px;
+                    padding: 0 12px;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,134 @@
+.content-bg-2 {
+    background-color: @bg-color-2;
+}
+
+.content {
+    padding: 0 @main-mg;
+    .content-head {
+        position: relative;
+        color: @txt-color-3;
+        font-size: 0;
+        &:before, &:after {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            display: inline-block;
+            content: '';
+            width: 40px;
+            height: 3px;
+        }
+        &:before {
+            background-color: @bg-color-1;
+            margin-left: -20px;
+        }
+        &:after {
+            background-color: @txt-color-2;
+            margin-left: 20px;
+        }
+        .head {
+            text-align: center;
+            font-size: 24px;
+            line-height: 2;
+        }
+        .more {
+            position: absolute;
+            text-align: right;
+            right: 0;
+            top: 0;
+            font-size: 14px;
+            cursor: pointer;
+            padding-top: 20px;
+            &:hover {
+                color: @bg-color-1;
+            }
+            .icon-gengduo {
+                font-size: 12px;
+            }
+        }
+    }
+    .content-list {
+        font-size: 0;
+        overflow-x: hidden;
+        overflow-y: visible;
+        white-space: nowrap;
+        padding-top: 20px;
+    }
+    .content-item {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        letter-spacing: 0;
+        width: calc(~"100% / 4 + 1.66666px");
+        .content-wrap {
+            padding-right: 10px;
+        }
+        .content-img {
+            position: relative;
+            &:before {
+                content: "";
+                display: block;
+                padding-top: 133.3333%;
+            }
+            .img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background-position: 50%;
+                background-size: 100% 100%;
+                background-color: @txt-color-2;
+                background-repeat: no-repeat;
+            }
+        }
+        .content-desc {
+            display: none;
+            background-color: @txt-color-2;
+        }
+        .content-tit {
+            font-size: 16px;
+            line-height: 2.3;
+            box-sizing: border-box;
+            cursor: pointer;
+            width: 100%;
+            .txt-overflow();
+        }
+        &:hover, &.on {
+            width: calc(~"(100% / 4 + 1.66666px) * 2");
+            margin-top: -7.5px;
+            .content-wrap {
+                padding-right: 0;
+            }
+            .content-img {
+                width: calc(~"50% - 5px");
+            }
+            .content-desc {
+                display: block;
+                position: absolute;
+                width: calc(~"50% - 5px");
+                height: 100%;
+                left: calc(~"50% - 5px");
+                top: 0
+            }
+            .content-tit {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: @screen-sm-min) {
+    .content {
+        .content-item {
+            width: calc(~"100% / 3 + 1.66666px");
+            &:hover, &.on {
+                width: calc(~"(100% / 3 + 1.66666px) * 2");
+            }
+        }
+    }
+}
+@media (max-width: @screen-mi-min) {
+    .content {
+        padding: 0 @sm-mg;
+    }
+}
