@@ -1,0 +1,91 @@
+.focus-3 {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0;
+  .focus-pics_item {
+    display: inline-block;
+    width: 48.72%;
+    overflow: hidden;
+    vertical-align: top;
+    li {
+      position: relative;
+      float: left;
+      overflow: hidden;
+      width: 100%;
+    }
+    .focus-pics_link {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      &:before {
+        display: block;
+        content: "";
+        padding-top: 88.4211%;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .focus-pics_imgCover {
+        display: none;
+        background: url(//www.qiyipic.com/common/fix/site/focus-imgCover.png) repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+      .focus-pics_title {
+        color: @white;
+        font-size: 12px;
+        line-height: 20px;
+        text-indent: 10px;
+        height: 20px;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        cursor: pointer;
+        background: rgba(0,0,0,.6);
+        transition: bottom .2s ease;
+      }
+      &:hover {
+        .focus-pics_imgCover {
+          display: block;
+        }
+        .focus-pics_title {
+          bottom: 0;
+        }
+      }
+    }
+    &.focus-pics_item-col2 {
+      width: 51.28%;
+      li {
+        .focus-pics_link {
+          margin: 0 0 10px 10px;
+        }
+        &:nth-child(1) {
+          width: 100%;
+          .focus-pics_link {
+            &:before {
+              padding-top: 56.4103%;
+            }
+          }
+        }
+        &:nth-child(2), &:nth-child(3) {
+          width: 50%;
+          .focus-pics_link {
+            &:before {
+              padding-top: 55.7895%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
