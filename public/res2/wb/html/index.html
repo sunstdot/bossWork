@@ -13,7 +13,7 @@
     <script src="../js/jquery.slicebox.js" type="application/javascript"></script>
 </head>
 <body class="full-page">
-    <div id="container">
+    <div id="fullpage">
         <div class="section" id="section0">
             <div class="nav-wrap">
                 <div class="nav">
@@ -28,11 +28,11 @@
                                 <a href="javascript:;" class="nav-list-icon" title="导航"><i class="wb-icon icon-mulu"></i></a>
                             </div>
                             <div class="nav-list clearfix">
-                                <div class="item on"><a href="">首页<span class="lower">Home</span></a></div>
-                                <div class="item"><a href="">产品中心<span class="lower">Products</span></a></div>
-                                <div class="item"><a href="">视频中心<span class="lower">Case</span></a></div>
-                                <div class="item"><a href="">公司简介<span class="lower">About</span></a></div>
-                                <div class="item"><a href="">联系我们<span class="lower">Contact</span></a></div>
+                                <div class="item on"><a href="javascript:void(0);">首页<span class="lower">Home</span></a></div>
+                                <div class="item"><a href="./product-center.html">产品中心<span class="lower">Products</span></a></div>
+                                <div class="item"><a href="./video-center.html">视频中心<span class="lower">Case</span></a></div>
+                                <div class="item"><a href="./gs-intro.html">公司简介<span class="lower">About</span></a></div>
+                                <div class="item"><a href="./contact-us.html">联系我们<span class="lower">Contact</span></a></div>
                             </div>
                         </div>
                     </div>
@@ -152,7 +152,7 @@
                     <p class="head">
                         产品中心
                     </p>
-                    <span class="more">more <i class="wb-icon icon-gengduo"></i></span>
+                    <a class="more" href="product-center.html">更多产品 <i class="wb-icon icon-gengduo"></i></a>
                 </h4>
                 <div class="content-list" id="productCenter">
                     <!--其他hover时移除已有on，并为当前hover列表加on-->
@@ -229,7 +229,7 @@
                     <p class="head">
                         视频中心
                     </p>
-                    <span class="more">more <i class="wb-icon icon-gengduo"></i></span>
+                    <a class="more" href="video-center.html">更多视频 <i class="wb-icon icon-gengduo"></i></a>
                 </h4>
                 <div class="content-list content-video-list">
                     <div class="content-item">
@@ -288,5 +288,6 @@
             </div>
         </div>
     </div>
+    <script src="../../../../src/home.js" type="application/javascript"></script>
 </body>
 </html>

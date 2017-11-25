@@ -28,15 +28,15 @@
             }
             selectDom = target;
         });
-        productDoms.on('mouseleave', function(e) {
-            if(selectDom.hasClass('on')) {
-                selectDom.removeClass('on');
-            }
-            selectDom = firstDom;
-            if(!selectDom.hasClass('on')) {
-                selectDom.addClass('on');
-            }
-        });
+//        productDoms.on('mouseleave', function(e) {
+//            if(selectDom.hasClass('on')) {
+//                selectDom.removeClass('on');
+//            }
+//            selectDom = firstDom;
+////            if(!selectDom.hasClass('on')) {
+////                selectDom.addClass('on');
+////            }
+//        });
     }
     //初始化焦点图事件
     function initFocus() {
@@ -45,21 +45,21 @@
                console.log('------ready');
            },
            orientation : 'r',
-					 cuboidsRandom : true,
-					 disperseFactor : 30
-        })
+           cuboidsRandom : true,
+           disperseFactor : 30
+        });
 
         var leftBtn = $('#leftArrowBtn');
         var rightBtn = $('#rightArrowBtn');
         leftBtn.on('click', function(e) {
             console.log('--------------left');
             slicebox.previous();
-						return false;
+            return false;
         });
         rightBtn.on('click', function(e) {
             console.log('--------------right');
             slicebox.next();
-						return false;
+            return false;
         });
     }
 
