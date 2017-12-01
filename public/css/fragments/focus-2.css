@@ -1,0 +1,17 @@
+.section-bg {
+  background: #000000 url("../images/index-bg.png") no-repeat center center;
+}
+.focus-2 .focus-list {
+  width: 100%;
+}
+.focus-2 .focus-arr {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  font-size: 40px;
+}
+.focus-2 .focus-arr.focus-arr-right {
+  padding: 5px 14px 5px 0;
+}
+.focus-2 .focus-arr.focus-arr-left {
+  padding: 5px 0 5px 14px;
+}

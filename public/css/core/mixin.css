@@ -1,0 +1,15 @@
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+  font: 0/0;
+}
+.clearfix:after {
+  clear: both;
+}
+.txt-overflow {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
