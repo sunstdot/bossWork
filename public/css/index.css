@@ -458,8 +458,8 @@ a {
     bottom: 0;
     right: 0;
     left: 0;
-    background-position: 50%;
-    background-size: 100% 100%;
+    /*background-position: 50%;*/
+    /*background-size: 100% 100%;*/
     background-repeat: no-repeat;
 }
 
